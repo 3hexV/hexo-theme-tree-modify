@@ -1,16 +1,27 @@
-title: tree
+title: tree-m
 
-author: 吴俊
+author: 3hex
+
+# [0 or 空]: default,默认配色
+# [1]: github_black,  github黑色主题
+# [2]: cnblogs        博客园
+# [3]: 忧郁深蓝
+# [4]: 活力鲜红
+
+theme: 1
 
 links:
-  github: https://github.com/wujun234
+  github: https://github.com/3hexV
   
 favicon: /favicon.ico
+
+# 快捷键 [~] 切换左边菜单
+hot_key: ture
 
 # valine 
 valine:
     # 评论
-    enableComment: true 
+    enableComment: false 
     # 阅读量
     enableCounter: false
     # valine appID
@@ -21,10 +32,10 @@ valine:
     avatar: retro
 
 # 是否开启“不蒜子”统计访问量
-busuanzi: true
+busuanzi: false
 
 # 底部版权开始年份
-siteStartYear: 2019
+siteStartYear: 2023
 
 ####### 站外搜索配置 #####
 # 站点如果【被搜索引擎收录】，可以配置通过搜索引擎全站搜索
@@ -32,13 +43,40 @@ siteStartYear: 2019
 #   https://www.baidu.com/s?wd=
 #   https://www.google.com/search?q=
 # homeHost：要搜索的站点域名，不配置默认取当前页面的域名
-searchEngine: https://www.google.com/search?q=
-homeHost: wujun234.github.io
+searchEngine: https://www.baidu.com/s?wd=
+homeHost: 3hexV.github.io
 
-#tags: true
-#categories: true
+tags:
+  enable: ture
+  title: "标签"
+  path: /tags
+
+categories:
+  enable: ture
+  title: "类别"
+  path: /categories
+  
+about:
+  enable: ture
+  title: "关于"
+  path: /about
 
 # 左侧导航栏，用文件名还是文章名
 sidebar:
   # usePostTitle 为 ture 用文章名，不填或为 false 用文件名
-  usePostTitle: false
+  usePostTitle: ture
+
+project_1:
+  enable: false
+  name: "project_1"
+  url: http://www.baidu.com
+
+project_2:
+  enable: false
+  name: "project_2"
+  url: http://www.baidu.com
+
+project_3:
+  enable: false
+  name: "project_3"
+  url: http://www.baidu.com

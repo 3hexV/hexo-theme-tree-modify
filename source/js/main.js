@@ -58,8 +58,7 @@ function switchTreeOrIndex() {
     scrollOn();
   } else {
     scrollOff();
-  }
-  ;
+  };
 }
 
 //生成文章目录

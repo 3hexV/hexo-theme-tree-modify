@@ -47,8 +47,26 @@
 		}
 	</script>
 
+	<%- css('css/com.css') %>
 
-	<%- css('css/main.css') %>
+	<% if (theme.theme == 0) { %>
+		<%- css('css/default.css') %>
+	<% }else if (theme.theme == 1) { %>
+		<%- css('css/github_black.css') %>
+	<% }else if (theme.theme == 2) { %>
+		<%- css('css/cnblogs.css') %>
+	<% }else if (theme.theme == 3) { %>
+		<%- css('css/blue.css') %>
+	<% }else if (theme.theme == 4) { %>
+		<%- css('css/red.css') %>
+	<% }else{ %>
+		<%- css('css/default.css') %>
+	<% } %>
+
+	<% if (theme.hot_key) { %>
+		<%- js('js/hotkey.js') %>
+	<% } %>
+
 	<%- css('https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css') %>
 	<%- css('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css') %>
 	<%- css('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css') %>
